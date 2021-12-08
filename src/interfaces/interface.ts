@@ -12,6 +12,7 @@ export interface IProductProps {
  preco: number;
  foto: string;
  categoria_id: number;
+ amount: number;
 }
 
 export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -22,6 +23,8 @@ export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 export interface IProductCardProps {
   nome: string;
   foto: string;
+  id: number;
+  preco: number;
 
 }
 export interface ISideBarProps {

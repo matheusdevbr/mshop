@@ -1,8 +1,19 @@
+
+import { useCart } from "../../hooks/useCart";
 import { IProductCardProps } from "../../interfaces/interface";
 
-export function ProductCard(props: IProductCardProps) {
+import { Container } from "./style";
+
+export function ProductCard( props: IProductCardProps) {
+  const { addProduct } = useCart();
+
+  function handleAddProduct(productId: number) {
+    addProduct(productId);
+  }
+
+  
   return (
-    <div className="movie-card">
+    <Container >
       {<img
         src={props.foto}
         alt={props.nome}
@@ -10,12 +21,12 @@ export function ProductCard(props: IProductCardProps) {
 
       <div>
         <div className="movie-info">
-          <span>{props.nome}</span>
-          <div className="meta">
-           
+          <span>{props.id}</span>
+          <div>
+            <button onClick={() => handleAddProduct(props.id)}>Adicionar ao carrinho</button>
           </div>
         </div>
       </div>
-    </div>
+    </Container>
   )
 }

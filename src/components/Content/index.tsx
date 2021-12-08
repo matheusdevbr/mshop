@@ -1,6 +1,7 @@
 import { IContentProps } from "../../interfaces/interface";
 
 import { ProductCard } from "../ProductCard";
+import { Container } from "./style";
 
 
 
@@ -8,15 +9,16 @@ export function Content({ produtos, selectedCategory}: IContentProps) {
   return(
     <div className="container">
     <header>
-      <span className="category">Categoria:<span> {selectedCategory.nome}</span></span>
+      <span className="category"><span> {selectedCategory.nome}</span></span>
     </header>
 
     <main>
-      <div className="products-list">
+      <Container>
+       
         {produtos.map(product => (
-          <ProductCard key ={product.id} nome={product.nome} foto={product.foto}  />
+          <ProductCard key ={product.id} nome={product.nome} foto={product.foto} id={product.id} preco={product.preco}  />
         ))}
-      </div>
+      </Container>
     </main>
   </div>
   )
