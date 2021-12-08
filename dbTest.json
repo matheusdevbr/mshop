@@ -59,7 +59,7 @@
     {
       "id": 8,
       "nome": "Coca cola 600ml",
-      "descricao": "",
+      "descricao": "Coca-Cola sabor original. ",
       "preco": 7.5,
       "foto": "https://www.clubeextra.com.br/img/uploads/1/18/12034018.jpg",
       "categoria_id": 3
@@ -73,7 +73,7 @@
       "categoria_id": 3
     }
   ],
-  
+
   "categorias": [
     {
       "id": 1,
