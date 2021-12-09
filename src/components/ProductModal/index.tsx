@@ -2,7 +2,7 @@ import Modal from 'react-modal'
 
 import { IProductModalProps } from "../../interfaces/interface";
 
-export function ProductModal({name, isOpen, onRequestClose}: IProductModalProps) {
+export function ProductModal({name, isOpen, onRequestClose, descricao}: IProductModalProps) {
   return (
     
       <Modal
@@ -12,6 +12,7 @@ export function ProductModal({name, isOpen, onRequestClose}: IProductModalProps)
         className="react-modal-content"
       >
         <h1>{name}</h1>
+        <p>{descricao}</p>
       </Modal>
     
   )

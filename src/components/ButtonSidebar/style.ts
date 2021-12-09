@@ -23,7 +23,7 @@ export const Container = styled.div`
   
   
   &:hover {
-    background: #777;
+    background: #bbb;
   }
 
   transition: 0.2s;

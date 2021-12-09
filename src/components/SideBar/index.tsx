@@ -1,5 +1,5 @@
 import { ISideBarProps } from "../../interfaces/interface"
-import { Button } from "../Button"
+import { Button } from "../ButtonSidebar"
 import { Container } from "./style"
 
 

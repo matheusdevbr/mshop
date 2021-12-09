@@ -33,12 +33,12 @@ export const Container = styled.div`
     font-size: 1rem;
 
     border-radius: 0.5rem;
-    background: #999;
+    background: #bbb;
 
     color: #111;
 
     &:hover {
-      background: #bbb;
+      background: #999;
 
       transition: 0.2s;
     }
