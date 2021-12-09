@@ -1,4 +1,4 @@
-import styled  from "styled-components";
+import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
@@ -23,12 +23,15 @@ export const Container = styled.div`
     font-size: 1.2rem;
     font-weight: 600;
   }
-  p{
+
+  p {
     padding: 0.5rem;
   }
 
   button {
     width: 100%;
+    display: flex;
+    flex-direction: row;
     padding: 1rem 2rem;
     font-size: 1rem;
 
@@ -37,6 +40,16 @@ export const Container = styled.div`
 
     color: #111;
 
+    div {
+        display: flex;
+        align-items: center;
+        padding: .5rem;
+        background: rgba(0, 0, 0, 0.1);
+        svg {
+          margin-right: 5px;
+        }
+      }
+  
     &:hover {
       background: #999;
 

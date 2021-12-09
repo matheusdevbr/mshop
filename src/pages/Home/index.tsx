@@ -3,7 +3,7 @@ import { Content } from "../../components/Content";
 import { SideBar } from "../../components/SideBar";
 import { ICategoryProps, IProductProps } from "../../interfaces/interface";
 import { api } from "../../services/api";
-import { formatPrice } from "../../util/format";
+
 import { Container } from "./style";
 
 
@@ -26,7 +26,7 @@ const [selectedCategoryId, setSelectedCategoryId] = useState(1);
       const response = await api.get<IProductProps[]>(`produtos/?categoria_id=${selectedCategoryId}`)
  
       const data = response.data
-      
+
       setProducts(data);
     }
 

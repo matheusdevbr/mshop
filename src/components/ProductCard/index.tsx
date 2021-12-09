@@ -1,5 +1,6 @@
 
 import { useState } from "react";
+import { MdAddShoppingCart } from "react-icons/md";
 import { useCart } from "../../hooks/useCart";
 
 import { IProductCardProps } from "../../interfaces/interface";
@@ -9,9 +10,13 @@ import { ProductModal } from "../ProductModal";
 
 import { Container } from "./style";
 
-export function ProductCard( props: IProductCardProps) {
-  const { addProduct } = useCart();
+interface CartItemsAmount {
+  [key: number]: number;
+}
 
+export function ProductCard( props: IProductCardProps) {
+  const { addProduct, cart } = useCart();
+  
   function handleAddProduct(productId: number) {
     addProduct(productId);
   }
@@ -26,6 +31,11 @@ export function ProductCard( props: IProductCardProps) {
     setisProductModalOpen(false)
   }
   
+  const cartItemsAmount = cart.reduce((sumAmount, product) => {
+    const newSumAmount = { ...sumAmount };
+    newSumAmount[product.id] = product.amount;
+    return newSumAmount;
+  }, {} as CartItemsAmount)
 
   return (
     <>
@@ -37,11 +47,20 @@ export function ProductCard( props: IProductCardProps) {
         />
 
         <div>
-          <div className="">
+          <div>
             <span>{props.nome}</span>
             <p>{formatPrice(props.preco)}</p>
+            
             <div>
-              <button onClick={() => handleAddProduct(props.id)}>Adicionar ao carrinho</button>
+              <button 
+                onClick={() => 
+                handleAddProduct(props.id)}>
+                  <div>
+                    <MdAddShoppingCart size={16} color="#FFF" />
+                    {cartItemsAmount[props.id] || 0} 
+                  </div>
+                  Adicionar ao carrinho
+              </button>
             </div>
           </div>
         </div>
