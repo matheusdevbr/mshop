@@ -1,3 +1,4 @@
+
 import { createContext, ReactNode, useContext, useState } from 'react';
 
 import { IProductProps } from '../interfaces/interface';
@@ -37,11 +38,8 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
       const updatedCart = [...cart];
       const productExists = updatedCart.find(product => product.id === productId);
 
-      const currentAmount = productExists ? productExists.amount : 0;
-      const amount = currentAmount + 1;
-
       if(productExists) {
-        productExists.amount = amount;
+        productExists.amount += 1;
       } else {
         const product = await api.get(`/produtos/${productId}`)
 

@@ -25,10 +25,8 @@ const [selectedCategoryId, setSelectedCategoryId] = useState(1);
     async function loadProducts() {
       const response = await api.get<IProductProps[]>(`produtos/?categoria_id=${selectedCategoryId}`)
  
-      const data = response.data.map(product => ({
-       ...product,
-       priceFormatted: formatPrice(product.preco)
-      }))
+      const data = response.data
+      
       setProducts(data);
     }
 
