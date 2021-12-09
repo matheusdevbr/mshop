@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { Content } from "../../components/Content";
 import { SideBar } from "../../components/SideBar";
@@ -20,7 +19,7 @@ const [selectedCategoryId, setSelectedCategoryId] = useState(1);
     api.get<ICategoryProps[]>('categorias').then(response => {
       setCategorys(response.data);
     });
-  }); 
+  }, []); 
 
   useEffect(() => {
     async function loadProducts() {
@@ -31,7 +30,7 @@ const [selectedCategoryId, setSelectedCategoryId] = useState(1);
        priceFormatted: formatPrice(product.preco)
       }))
       setProducts(data);
-     }
+    }
 
     api.get<ICategoryProps>(`categorias/?id=${selectedCategoryId}`).then(response => {
       setSelectedCategory(response.data);
