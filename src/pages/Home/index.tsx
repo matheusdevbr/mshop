@@ -12,15 +12,15 @@ export function Home() {
 const [selectedCategoryId, setSelectedCategoryId] = useState(1);
 
   const [categorys, setCategorys] = useState<ICategoryProps[]>([]);
-
   const [products, setProducts] = useState<IProductProps[]>([]);
+  
   const [selectedCategory, setSelectedCategory] = useState<ICategoryProps>({} as ICategoryProps);
 
   useEffect(() => {
     api.get<ICategoryProps[]>('categorias').then(response => {
       setCategorys(response.data);
     });
-  }, []); 
+  }); 
 
   useEffect(() => {
     async function loadProducts() {
@@ -33,7 +33,7 @@ const [selectedCategoryId, setSelectedCategoryId] = useState(1);
       setProducts(data);
      }
 
-    api.get<ICategoryProps>(`categorias/${selectedCategoryId}`).then(response => {
+    api.get<ICategoryProps>(`categorias/?id=${selectedCategoryId}`).then(response => {
       setSelectedCategory(response.data);
     })
 

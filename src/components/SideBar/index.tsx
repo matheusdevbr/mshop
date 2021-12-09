@@ -4,7 +4,7 @@ import { Container } from "./style"
 
 
 export function SideBar({ categorias, handleClickButton, selectedCategoryId }: ISideBarProps) {
-  
+    
   return (
     <Container>
         <span>Categorias:</span>

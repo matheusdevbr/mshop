@@ -9,7 +9,6 @@ export function Header() {
   const { cart } = useCart();
   const cartSize = cart.length;
 
-
   return (
     <Container>
       <Link to="/">

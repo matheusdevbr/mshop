@@ -1,12 +1,8 @@
 import Modal from 'react-modal'
 
-interface ProductModalProps {
-  name: string;
-  isOpen: boolean;
-  onRequestClose: () => void;
-}
+import { IProductModalProps } from "../../interfaces/interface";
 
-export function ProductModal({name, isOpen, onRequestClose}: ProductModalProps) {
+export function ProductModal({name, isOpen, onRequestClose}: IProductModalProps) {
   return (
     
       <Modal

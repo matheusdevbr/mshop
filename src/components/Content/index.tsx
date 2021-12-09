@@ -5,13 +5,19 @@ import { Container } from "./style";
 
 
 
-export function Content({ produtos}: IContentProps) {
+export function Content({ produtos }: IContentProps) {
   return(
     
       <Container>
        
         {produtos.map(product => (
-          <ProductCard key ={product.id} nome={product.nome} foto={product.foto} id={product.id} preco={product.preco}  />
+          <ProductCard 
+          key={product.nome} 
+          nome={product.nome} 
+          foto={product.foto} 
+          id={product.id} 
+          preco={product.preco} 
+          descricao={product.descricao}/>
         ))}
       </Container>
   

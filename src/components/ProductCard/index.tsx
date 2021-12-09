@@ -1,7 +1,9 @@
 
 import { useState } from "react";
 import { useCart } from "../../hooks/useCart";
+
 import { IProductCardProps } from "../../interfaces/interface";
+
 import { formatPrice } from "../../util/format";
 import { ProductModal } from "../ProductModal";
 
@@ -49,6 +51,10 @@ export function ProductCard( props: IProductCardProps) {
         name={props.nome}
         isOpen={isProductModalOpen}
         onRequestClose={handleClosePokeDetailsModal}
+        id={props.id}
+        descricao={props.descricao}
+        preco={props.preco}
+        foto={props.foto}
       />
     </>
   )

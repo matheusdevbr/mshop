@@ -15,8 +15,14 @@ export const Container = styled.div`
   img { 
     max-width: 10rem;
     width: 100%;
+
+    cursor: pointer;
   }
 
+  span {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
   p{
     padding: 0.5rem;
   }

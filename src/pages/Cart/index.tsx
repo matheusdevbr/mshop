@@ -49,28 +49,28 @@ export function Cart() {
       <ProductTable>
         <thead>
           <tr>
-            <th aria-label="product image" />
+            <th/>
             <th>PRODUTO</th>
             <th>QTD</th>
             <th>SUBTOTAL</th>
-            <th aria-label="delete icon" />
+            <th  />
           </tr>
         </thead>
         <tbody>
           {cartFormatted.map(product => (
-            <tr key={product.id} data-testid="product">
+            <tr key={product.id}>
               <td>
-                <img src="" alt={product.nome} />
+                <img src={product.foto}  alt={product.nome} />
               </td>
-              <td>
+              <td className="name-price">
                 <strong>{product.nome}</strong>
                 <span>{product.priceFormatted}</span>
               </td>
               <td>
+
                 <div>
                   <button
                     type="button"
-                    data-testid="decrement-product"
                     disabled={product.amount <= 1}
                     onClick={() => handleProductDecrement(product)}
                   >
@@ -78,18 +78,16 @@ export function Cart() {
                   </button>
                   <input
                     type="text"
-                    data-testid="product-amount"
-                    readOnly
                     value={product.amount}
                   />
                   <button
                     type="button"
-                    data-testid="increment-product"
                     onClick={() => handleProductIncrement(product)}
                   >
                     <MdAddCircleOutline size={20} />
                   </button>
                 </div>
+
               </td>
               <td>
                 <strong>{product.subTotal}</strong>
@@ -97,7 +95,6 @@ export function Cart() {
               <td>
                 <button
                   type="button"
-                  data-testid="remove-product"
                   onClick={() => handleRemoveProduct(product.id)}
                 >
                   <MdDelete size={20} />

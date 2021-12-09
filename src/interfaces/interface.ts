@@ -21,11 +21,11 @@ export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export interface IProductCardProps {
+  descricao: string;
   nome: string;
   foto: string;
   id: number;
   preco: number;
-
 }
 export interface ISideBarProps {
   categorias: ICategoryProps[]
@@ -36,4 +36,14 @@ export interface ISideBarProps {
 export interface IContentProps {
   produtos: IProductProps[];
   selectedCategory: ICategoryProps;
+}
+
+export interface IProductModalProps {
+  name: string;
+  isOpen: boolean;
+  onRequestClose: () => void;
+  descricao: string;
+  foto: string;
+  id: number;
+  preco: number;
 }
