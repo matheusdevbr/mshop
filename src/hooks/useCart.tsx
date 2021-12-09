@@ -67,8 +67,8 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
       } else {
           throw Error();
       }
-    } catch {
-      alert(Error)
+    } catch(error) {
+      alert(error)
     }
   };
 
@@ -90,8 +90,8 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
       } else {
         throw Error();
       }
-    } catch {
-      alert(Error);
+    } catch(error) {
+      alert(error)
     }
   };
 
