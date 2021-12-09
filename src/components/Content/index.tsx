@@ -17,7 +17,9 @@ export function Content({ produtos }: IContentProps) {
           foto={product.foto} 
           id={product.id} 
           preco={product.preco} 
-          descricao={product.descricao}/>
+          descricao={product.descricao}
+          categoria_id={product.categoria_id}
+          />
         ))}
       </Container>
   
