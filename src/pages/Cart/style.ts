@@ -40,6 +40,7 @@ export const ProductTable = styled.table`
   }
   img {
     height: 100px;
+    margin-bottom: -2rem;
   }
   
   strong {

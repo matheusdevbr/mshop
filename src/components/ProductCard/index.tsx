@@ -56,7 +56,7 @@ export function ProductCard( props: IProductCardProps) {
                 onClick={() => 
                 handleAddProduct(props.id)}>
                   <div>
-                    <MdAddShoppingCart size={16} color="#FFF" />
+                    <MdAddShoppingCart size={18} color="#FFF" />
                     {cartItemsAmount[props.id] || 0} 
                   </div>
                   Adicionar ao carrinho

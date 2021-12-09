@@ -7,7 +7,7 @@ export const Container = styled.div`
   align-items: center;
   margin: 30px 2rem;
   background: #222;
-  padding: 15px;
+  padding: 15px 3rem;
   border-radius: 7px;
 
   a {

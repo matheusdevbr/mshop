@@ -53,7 +53,7 @@ export function Cart() {
             <th>PRODUTO</th>
             <th>QTD</th>
             <th>SUBTOTAL</th>
-            <th  />
+            <th />
           </tr>
         </thead>
         <tbody>
