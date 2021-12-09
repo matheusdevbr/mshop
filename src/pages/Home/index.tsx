@@ -5,6 +5,7 @@ import { SideBar } from "../../components/SideBar";
 import { ICategoryProps, IProductProps } from "../../interfaces/interface";
 import { api } from "../../services/api";
 import { formatPrice } from "../../util/format";
+import { Container } from "./style";
 
 
 export function Home() {
@@ -46,7 +47,7 @@ const [selectedCategoryId, setSelectedCategoryId] = useState(1);
   
 
   return (
-    <>
+    <Container>
       <SideBar 
         categorias={categorys}
         handleClickButton={handleClickButton}
@@ -57,6 +58,6 @@ const [selectedCategoryId, setSelectedCategoryId] = useState(1);
         produtos={products}
         selectedCategory={selectedCategory} 
       />
-    </>
+    </Container>
   );
 }

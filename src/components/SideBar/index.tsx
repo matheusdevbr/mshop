@@ -1,13 +1,13 @@
 import { ISideBarProps } from "../../interfaces/interface"
 import { Button } from "../Button"
+import { Container } from "./style"
 
 
 export function SideBar({ categorias, handleClickButton, selectedCategoryId }: ISideBarProps) {
   
   return (
-    <div style={{ display: 'flex', flexDirection: 'row' }}>
-      <nav className="sidebar">
-        <span>Nome da aplicação</span>
+    <Container>
+        <span>Categorias:</span>
 
         <div className="buttons-container">
           {categorias.map(categoria => (
@@ -20,7 +20,7 @@ export function SideBar({ categorias, handleClickButton, selectedCategoryId }: I
           ))}
         </div>
 
-      </nav>
-    </div>
+      
+    </Container>
   )
 }

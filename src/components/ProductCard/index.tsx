@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { useCart } from "../../hooks/useCart";
 import { IProductCardProps } from "../../interfaces/interface";
+import { formatPrice } from "../../util/format";
 import { ProductModal } from "../ProductModal";
 
 import { Container } from "./style";
@@ -34,8 +35,9 @@ export function ProductCard( props: IProductCardProps) {
         />
 
         <div>
-          <div className="movie-info">
-            <span>{props.id}</span>
+          <div className="">
+            <span>{props.nome}</span>
+            <p>{formatPrice(props.preco)}</p>
             <div>
               <button onClick={() => handleAddProduct(props.id)}>Adicionar ao carrinho</button>
             </div>

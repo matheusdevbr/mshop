@@ -1,11 +1,10 @@
 import styled  from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.main`
 
   display: grid;
   grid-template-columns: repeat( 3, 1fr);
-
-  img{ 
-    width: 100px;
-  }
+  text-align: center;
+  gap: 2rem;
+ 
 `

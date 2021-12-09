@@ -2,13 +2,16 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
   :root {
-    --background: #f8f2f5;  
+    --background: #444;  
   }
 
   * { 
     margin: 0;
     padding: 0;
+    border:0;
     box-sizing: border-box;
+    vertical-align:baseline;
+  
   }
 
   html {
@@ -30,6 +33,7 @@ export const GlobalStyles = createGlobalStyle`
       font-weight: 400;
   }
 
+
   button {
     cursor: pointer;
   }
@@ -37,13 +41,6 @@ export const GlobalStyles = createGlobalStyle`
   [disabled] {
     opacity: 0.6;
     cursor: not-allowed;
-  }
-
-  #root {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-
-    padding: 4rem;
   }
 
   .react-modal-overlay {
@@ -64,7 +61,7 @@ export const GlobalStyles = createGlobalStyle`
 .react-modal-content {
     width: 100%;
     max-width: 60rem;
-    background: var(--background);
+    background: #f8f2f5;
 
     padding: 3rem;
     position: relative;  

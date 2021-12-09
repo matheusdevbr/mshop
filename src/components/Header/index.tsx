@@ -1,8 +1,9 @@
 import { MdShoppingBasket } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 import { useCart } from '../../hooks/useCart';
 
-import { Cart, Container, Home } from "./styles";
+import { Cart, Container } from "./style";
 
 export function Header() {
   const { cart } = useCart();
@@ -11,9 +12,9 @@ export function Header() {
 
   return (
     <Container>
-      <Home to="/">
-        home
-      </Home>
+      <Link to="/">
+        <h3>Home</h3>
+      </Link>
 
       <Cart to="/cart">
         <div>

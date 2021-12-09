@@ -5,16 +5,22 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 50px 0;
+  margin: 30px 2rem;
+  background: #222;
+  padding: 15px;
+  border-radius: 7px;
 
   a {
+    text-decoration: none;
+    color: #fff;
     transition: opacity 0.2s;
+
 
     &:hover {
       opacity: 0.7;
     }
   }
- 
+
 `
 
 export const Home = styled(Link)`
