@@ -12,9 +12,9 @@ export function App() {
   return (
     <BrowserRouter>
     <CartProvider>
-      <GlobalStyles />
       <Header />
       <Router />
+      <GlobalStyles />
     </CartProvider>
     </BrowserRouter>
   );

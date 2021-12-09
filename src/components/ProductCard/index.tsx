@@ -1,6 +1,8 @@
 
+import { useState } from "react";
 import { useCart } from "../../hooks/useCart";
 import { IProductCardProps } from "../../interfaces/interface";
+import { ProductModal } from "../ProductModal";
 
 import { Container } from "./style";
 
@@ -11,22 +13,41 @@ export function ProductCard( props: IProductCardProps) {
     addProduct(productId);
   }
 
-  
-  return (
-    <Container >
-      {<img
-        src={props.foto}
-        alt={props.nome}
-      />}
+  const [isProductModalOpen, setisProductModalOpen] = useState(false);
+ 
+  function handleOpenPokeDetailsModal() {
+    setisProductModalOpen(true)
+  }
 
-      <div>
-        <div className="movie-info">
-          <span>{props.id}</span>
-          <div>
-            <button onClick={() => handleAddProduct(props.id)}>Adicionar ao carrinho</button>
+  function handleClosePokeDetailsModal() {
+    setisProductModalOpen(false)
+  }
+  
+
+  return (
+    <>
+      <Container >
+        <img
+          src={props.foto}
+          alt={props.nome}
+          onClick={handleOpenPokeDetailsModal}
+        />
+
+        <div>
+          <div className="movie-info">
+            <span>{props.id}</span>
+            <div>
+              <button onClick={() => handleAddProduct(props.id)}>Adicionar ao carrinho</button>
+            </div>
           </div>
         </div>
-      </div>
-    </Container>
+      </Container>
+      
+      <ProductModal
+        name={props.nome}
+        isOpen={isProductModalOpen}
+        onRequestClose={handleClosePokeDetailsModal}
+      />
+    </>
   )
 }

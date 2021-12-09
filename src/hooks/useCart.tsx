@@ -24,7 +24,7 @@ const CartContext = createContext<CartContextData>({} as CartContextData);
 
 export function CartProvider({ children }: CartProviderProps): JSX.Element {
   const [cart, setCart] = useState<IProductProps[]>(() => {
-    const storagedCart = localStorage.getItem('@ShopBr:cart');
+    const storagedCart = localStorage.getItem('@MShop:cart');
     if (storagedCart) {
       return JSON.parse(storagedCart); //retornando pro formato de array de produtos 
     }
@@ -58,7 +58,7 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
       }
 
       setCart(updatedCart);
-      console.log(cart)
+    
   };
 
   const removeProduct = (productId: number) => {
