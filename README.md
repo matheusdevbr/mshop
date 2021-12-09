@@ -1,4 +1,4 @@
-Para testar a aplicação no prompt de comando você precisa executar os comandos:
+Para testar a aplicação: no prompt de comando ir até o repositorio da aplicação e executar os comandos:
 
 ### `yarn server`
 ### `yarn start`
