@@ -13,6 +13,12 @@ export const Container = styled.div`
   background: #f8f2f5;
 
   .card-open-modal {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
     cursor: pointer;
     
     img { 
@@ -20,12 +26,12 @@ export const Container = styled.div`
       width: 100%;
     }
 
-    span {
+    h2 {
       font-size: 1.2rem;
       font-weight: 600;
     }
 
-    p {
+    span {
       padding: 0.5rem;
     }
  }

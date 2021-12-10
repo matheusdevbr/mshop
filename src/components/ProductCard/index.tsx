@@ -29,16 +29,17 @@ export function ProductCard( props: IProductCardProps) {
         <div className="card-open-modal" 
         onClick={handleOpenPokeDetailsModal}
         >
-          <img
-            src={props.foto}
-            alt={props.nome}
+          <div>
+            <img
+              src={props.foto}
+              alt={props.nome}
 
-          />
-
+            />
+          </div>
           <div>
             <div>
-              <span>{props.nome}</span>
-              <p>{formatPrice(props.preco)}</p>   
+              <h2>{props.nome}</h2>
+              <span>{formatPrice(props.preco)}</span>   
             </div>
           </div>
         </div>
