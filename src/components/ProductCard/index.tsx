@@ -38,13 +38,12 @@ export function ProductCard( props: IProductCardProps) {
           <div>
             <div>
               <span>{props.nome}</span>
-              <p>{formatPrice(props.preco)}</p>
-
-              <div>
-                <ButtonAddProductCart id={props.id} />
-              </div>
+              <p>{formatPrice(props.preco)}</p>   
             </div>
           </div>
+        </div>
+        <div>
+          <ButtonAddProductCart id={props.id} />
         </div>
       </Container>
       
