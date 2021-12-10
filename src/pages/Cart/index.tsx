@@ -26,20 +26,20 @@ export function Cart() {
   }))
 
   const total = formatPrice(
-      cart.reduce((sumTotal, product) => {
-        return sumTotal + product.preco * product.amount
-      }, 0)
-    )
+    cart.reduce((sumTotal, product) => {
+      return sumTotal + product.preco * product.amount
+    }, 0)
+  )
 
-  
-    function handleProductIncrement(product: Product) {
-      updateProductAmount({ productId: product.id, amount: product.amount + 1 })
-    }
-  
-    function handleProductDecrement(product: Product) {
-      updateProductAmount({ productId: product.id, amount: product.amount - 1 })
-    }
-  
+
+  function handleProductIncrement(product: Product) {
+    updateProductAmount({ productId: product.id, amount: product.amount + 1 })
+  }
+
+  function handleProductDecrement(product: Product) {
+    updateProductAmount({ productId: product.id, amount: product.amount - 1 })
+  }
+
   function handleRemoveProduct(productId: number) {
     removeProduct(productId);
   }

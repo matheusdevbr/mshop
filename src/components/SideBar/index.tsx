@@ -1,5 +1,5 @@
 import { ISideBarProps } from "../../interfaces/interface"
-import { Button } from "../ButtonSidebar"
+import { ButtonSideBar } from "../ButtonSidebar"
 import { Container } from "./style"
 
 
@@ -11,7 +11,7 @@ export function SideBar({ categorias, handleClickButton, selectedCategoryId }: I
 
         <div className="buttons-container">
           {categorias.map(categoria => (
-            <Button
+            <ButtonSideBar
               key={String(categoria.id)}
               nome={categoria.nome}
               onClick={() => handleClickButton(categoria.id)}

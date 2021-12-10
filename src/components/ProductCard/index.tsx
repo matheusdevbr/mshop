@@ -26,19 +26,23 @@ export function ProductCard( props: IProductCardProps) {
   return (
     <>
       <Container >
-        <img
-          src={props.foto}
-          alt={props.nome}
-          onClick={handleOpenPokeDetailsModal}
-        />
+        <div className="card-open-modal" 
+        onClick={handleOpenPokeDetailsModal}
+        >
+          <img
+            src={props.foto}
+            alt={props.nome}
 
-        <div>
+          />
+
           <div>
-            <span>{props.nome}</span>
-            <p>{formatPrice(props.preco)}</p>
-            
             <div>
-              <ButtonAddProductCart id={props.id} />
+              <span>{props.nome}</span>
+              <p>{formatPrice(props.preco)}</p>
+
+              <div>
+                <ButtonAddProductCart id={props.id} />
+              </div>
             </div>
           </div>
         </div>
@@ -52,7 +56,7 @@ export function ProductCard( props: IProductCardProps) {
         descricao={props.descricao}
         preco={props.preco}
         foto={props.foto}
-        categoria_id={props.categoria_id}
+        categoria={props.categoria}
       />
     </>
   )

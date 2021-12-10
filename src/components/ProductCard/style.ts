@@ -12,20 +12,21 @@ export const Container = styled.div`
   border-radius: 0.5rem;
   background: #f8f2f5;
 
-  img { 
-    max-width: 10rem;
-    width: 100%;
-
+  .card-open-modal {
     cursor: pointer;
-  }
+    
+    img { 
+      max-width: 10rem;
+      width: 100%;
+    }
 
-  span {
-    font-size: 1.2rem;
-    font-weight: 600;
-  }
+    span {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
 
-  p {
-    padding: 0.5rem;
-  }
- 
+    p {
+      padding: 0.5rem;
+    }
+ }
 `

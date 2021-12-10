@@ -26,7 +26,7 @@ export interface IProductCardProps {
   foto: string;
   id: number;
   preco: number;
-  categoria_id: number;
+  categoria: string;
 }
 export interface ISideBarProps {
   categorias: ICategoryProps[]
@@ -47,5 +47,5 @@ export interface IProductModalProps {
   id: number;
   preco: number;
   name: string;
-  categoria_id: number;
+  categoria: string;
 }

@@ -5,11 +5,13 @@ import { Container } from "./style";
 
 
 
-export function Content({ produtos }: IContentProps) {
+export function Content({ produtos, selectedCategory}: IContentProps) {
+
+
+  
   return(
     
       <Container>
-       
         {produtos.map(product => (
           <ProductCard 
           key={product.nome} 
@@ -18,7 +20,7 @@ export function Content({ produtos }: IContentProps) {
           id={product.id} 
           preco={product.preco} 
           descricao={product.descricao}
-          categoria_id={product.categoria_id}
+          categoria={selectedCategory.nome}
           />
         ))}
       </Container>

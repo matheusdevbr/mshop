@@ -2,14 +2,18 @@
 import Modal from 'react-modal'
 
 import { IProductModalProps } from "../../interfaces/interface";
+import { formatPrice } from '../../util/format';
 import { ButtonAddProductCart } from '../ButtonAddProductCart';
 import { Container } from './style';
 
 
+export function ProductModal({name, isOpen, onRequestClose, preco, descricao, foto, id, categoria}: IProductModalProps) {
+ 
+  
+    console.log(categoria)
 
-export function ProductModal({name, isOpen, onRequestClose, preco, descricao, foto, id, categoria_id}: IProductModalProps) {
+  
   return (
-    
       <Modal
         isOpen={isOpen}
         onRequestClose={onRequestClose}
@@ -17,14 +21,20 @@ export function ProductModal({name, isOpen, onRequestClose, preco, descricao, fo
         className="react-modal-content"
       >
       <Container>
-        <div>
+        <div className="product-info-modal">
           <div>
-            <img src="" alt="" />
+            <img src={foto} alt={`Imagem do produto ${name}`} />
           </div>
 
-          <div>
-            <h1>{name}</h1>
-            <p>{descricao}</p>
+          <div className="product-info-modal-text">
+            <div>
+              <h4>{name}</h4>
+              <span>{categoria}</span>
+              <p>{descricao}</p>
+            </div>
+            <div>
+              <strong>{formatPrice(preco)}</strong>
+            </div>
           </div>
         </div>
 

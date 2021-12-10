@@ -7,9 +7,13 @@ export const Container = styled.div`
   border-radius: 4px;
   footer {
     margin-top: 30px;
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    background: #ddd;
+    border-radius: 5px;
     button {
       background: #777;
       color: #fff;
@@ -39,7 +43,9 @@ export const ProductTable = styled.table`
     border-bottom: 1px solid #eee;
   }
   img {
+    max-width: 9rem;
     height: 100px;
+    margin-left: 1rem;
     margin-bottom: -2rem;
   }
   
