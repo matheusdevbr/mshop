@@ -1,8 +1,8 @@
 # :pushpin: Índice
 
-* [Technologies](#-tecnologias)
-* [Installation](#construction_worker-instalação)
-* [Getting Started](#runner-primeiros-passos)
+* [Tecnologias](#-tecnologias)
+* [Instalação](#construction_worker-instalação)
+* [Primeiros Passos](#runner-primeiros-passos)
 
 ##💻Tecnologias
 
