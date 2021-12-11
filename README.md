@@ -46,4 +46,4 @@ Execute o seguinte comando para iniciar o aplicativo em um ambiente de desenvolv
 
 ```yarn start```
 
-Para visualizar o projeto, você pode abrir [localhost: 3000] (http: // localhost: 3000).
+Para visualizar o projeto, você pode abrir [localhost: 3000](http://localhost:3000).
