@@ -4,7 +4,7 @@
 * [Instalação](#construction_worker-instalação)
 * [Primeiros Passos](#runner-primeiros-passos)
 
-##💻Tecnologias
+## 💻 Tecnologias
 
 Este projeto foi desenvolvido com as seguintes tecnologias:
 
