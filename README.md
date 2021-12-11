@@ -18,7 +18,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 # :construction_worker: Instalação 
 
-**Você precisa instalar [Node.js](https://nodejs.org/en/download/) e [Yarn](https://yarnpkg.com/) primeiro, a fim de clonar o projeto via HTTPS , execute este comando:**
+**Você precisa instalar [Node.js](https://nodejs.org/en/download/) e [Yarn](https://yarnpkg.com/) primeiro, a fim de clonar o projeto via SSH , execute este comando:**
 
 ```
 git clone git@github.com:matheusdevbr/mshop.git
