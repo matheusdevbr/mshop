@@ -1,4 +1,4 @@
-# :pushpin: Table of Contents
+# :pushpin: Índice
 
 * [Technologies](#-tecnologias)
 * [Installation](#construction_worker-instalação)
