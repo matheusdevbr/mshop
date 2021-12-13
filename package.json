@@ -33,7 +33,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "server": "json-server dbTest.json --port 3333",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
