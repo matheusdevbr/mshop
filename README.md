@@ -13,7 +13,6 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 - [Context API](https://pt-br.reactjs.org/docs/context.html)
 - [Webpack](https://webpack.js.org/)
 - [Babel](https://babeljs.io/)
-- [Json Server](https://github.com/typicode/json-server)
 
 
 # :construction_worker: Instalação 
