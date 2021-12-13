@@ -38,12 +38,6 @@ npm install
 
 # :runner: Primeiros passos 
 
-Execute o seguinte comando para iniciar a API falsa com servidor JSON para simular uma API que tem informações de gênero e filme:
-
-```yarn server```
-
-Execute o seguinte comando para iniciar o aplicativo em um ambiente de desenvolvimento:
-
 ```yarn start```
 
 Para visualizar o projeto, você pode abrir [localhost: 3000](http://localhost:3000).
