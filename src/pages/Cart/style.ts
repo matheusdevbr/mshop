@@ -48,11 +48,13 @@ export const ProductTable = styled.table`
     margin-left: 1rem;
     margin-bottom: -2rem;
   }
-  
+ 
   strong {
     color: #333;
     display: block;
+    margin-top: -3rem;
   }
+  
   span {
     display: block;
     margin-top: 5px;
