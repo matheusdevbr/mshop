@@ -6,7 +6,7 @@ import {Cart} from './pages/Cart';
 export const Router = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home/>} />
+      <Route path="/mshop" element={<Home/>} />
       <Route path="/cart" element={<Cart/>} />
     </Routes>
   );

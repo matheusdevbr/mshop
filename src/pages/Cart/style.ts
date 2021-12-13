@@ -1,10 +1,16 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  
   margin: 0 1rem;
   padding: 30px;
   background: #fff;
   border-radius: 4px;
+
+  @media (max-width: 720px) {
+      display: flex;
+      flex-direction: column;
+    }
   footer {
     margin-top: 30px;
     padding: 1rem;
@@ -32,6 +38,18 @@ export const Container = styled.div`
 
 export const ProductTable = styled.table`
   width: 100%;
+
+  @media (max-width: 720px) {
+      display: flex;
+      flex-direction: column;
+
+      tbody tr {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
   
   thead th {
     color: #999;
@@ -41,6 +59,8 @@ export const ProductTable = styled.table`
   tbody td {
     padding: 12px;
     border-bottom: 1px solid #eee;
+
+    
   }
   img {
     max-width: 9rem;
@@ -58,7 +78,7 @@ export const ProductTable = styled.table`
   span {
     display: block;
     margin-top: 5px;
-    font-size: 18px;
+    font-size: 1.7rem;
     font-weight: bold;
   }
   div {

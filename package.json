@@ -1,7 +1,7 @@
 {
   "name": "projeto",
   "version": "0.1.0",
-  "homepage": "/",
+  "homepage": "mshop/",
   "private": true,
   "dependencies": {
     "axios": "^0.24.0",

@@ -10,9 +10,6 @@ import { Container } from './style';
 export function ProductModal({name, isOpen, onRequestClose, preco, descricao, foto, id, categoria}: IProductModalProps) {
  
   
-    console.log(categoria)
-
-  
   return (
       <Modal
         isOpen={isOpen}

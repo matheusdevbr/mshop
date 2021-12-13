@@ -11,7 +11,7 @@ export function Header() {
 
   return (
     <Container>
-      <Link to="/">
+      <Link to="/mshop">
         <h3>Home</h3>
       </Link>
 
