@@ -13,7 +13,6 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 - [Context API](https://pt-br.reactjs.org/docs/context.html)
 - [Webpack](https://webpack.js.org/)
 - [Babel](https://babeljs.io/)
-- [Json Server](https://github.com/typicode/json-server)
 
 
 # :construction_worker: Instalação 
@@ -37,12 +36,6 @@ npm install
 ```
 
 # :runner: Primeiros passos 
-
-Execute o seguinte comando para iniciar a API falsa com servidor JSON para simular uma API que tem informações de gênero e filme:
-
-```yarn server```
-
-Execute o seguinte comando para iniciar o aplicativo em um ambiente de desenvolvimento:
 
 ```yarn start```
 
