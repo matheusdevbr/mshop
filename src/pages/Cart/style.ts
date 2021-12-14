@@ -7,10 +7,7 @@ export const Container = styled.div`
   background: #fff;
   border-radius: 4px;
 
-  @media (max-width: 720px) {
-      display: flex;
-      flex-direction: column;
-    }
+  
   footer {
     margin-top: 30px;
     padding: 1rem;
@@ -39,18 +36,6 @@ export const Container = styled.div`
 export const ProductTable = styled.table`
   width: 100%;
 
-  @media (max-width: 720px) {
-      display: flex;
-      flex-direction: column;
-
-      tbody tr {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-  
   thead th {
     color: #999;
     text-align: left;
