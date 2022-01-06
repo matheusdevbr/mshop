@@ -67,7 +67,6 @@ export function Cart() {
                 <span>{product.priceFormatted}</span>
               </td>
               <td>
-
                 <div>
                   <button
                     type="button"
@@ -89,11 +88,12 @@ export function Cart() {
                 </div>
 
               </td>
-              <td>
+              <td className="price-product-subTotal">
                 <strong>{product.subTotal}</strong>
               </td>
               <td>
                 <button
+                  className="delete-button"
                   type="button"
                   onClick={() => handleRemoveProduct(product.id)}
                 >
